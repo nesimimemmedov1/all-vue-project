@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div id="app">
+        <!-- <h1>{{adSoyad()}}</h1>
+        <h3>{{yasadigiYer}}</h3>
+        <p>{{yas}}</p>
+        <a v-bind:href="facebook">facebook kecid</a> -->
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-12" style="margin-top: 250px;">
+                    <!-- <h6> <b>eded 1</b>: {{eded1}} <b>eded 2: <b>eded 1</b>: {{eded2}}</b></h6>
+
+
+                    <button class="btn btn-danger" v-on:click="eded1++">eded 1-i artir</button>
+                    <button class="btn btn-info" v-on:click="eded2++">eded 2-i artir</button>
+
+                    <h1>{{yoxla}}</h1> -->
+
+                    <!-- <button class="btn btn-danger" v-on:click="Artir()">Artir</button>
+                    <button class="btn btn-info" v-on:click="Azalt()">Azalt</button> -->
+
+                    <!-- <h1>{{event}}</h1>
+                    <div style="width: 400px; height: 400px; background:purple; margin: 0 auto;"v-on:mouseenter="MouseEnter()" v-on:mouseleave="MouseLeave()"></div> -->
+
+                    <!-- <h1>{{text}}</h1>
+                    <input class="form-control" v-on:keyup="KeyUp"> -->
+
+                    <!-- <h1>{{adSoyad}}</h1> -->
+                    <!-- <input type="text" class="form-control" v-model="adSoyad"> -->
+
+                    <!-- <input type="text" class="form-control" v-model="axtar"> -->
+
+                    <!-- <div class="box" :class="{purple : reng}"></div>
+
+                    <button class="btn btn-danger" v-on:click="reng=!reng">deyis</button> -->
+
+                    <!-- <div :style="{background:arxaFon, color:yaziRengi, height:hundurluk+'px'}">
+                        <h1 :style="{paddingTop: icherdenMesafe+'px'}">Salam</h1>
+                    </div>
+
+                    <input type="color" v-model="arxaFon">
+                    <input v-model="yaziRengi" type="color">
+                    <input type="number" v-model="hundurluk">
+                    <h2>reng teyin edin</h2>
+                    <input type="number" v-model="icherdenMesafe">
+                    <h2>Salam dunyanin paddingini teyin edin</h2> -->
+
+                    <!-- oyunnnnnnnnnnnnnnnnnnnnnnnnnnnnnn -->
+                    <!-- <h3>{{RastGelenEded}}</h3>
+                    <h1>Reqemi Tap Oyunu</h1>
+                    <br>
+                    <br>
+                    <div id="warning" class="alert alert-danger">{{Mesaj}}</div>
+                    <br>
+                    <br>
+                    <h3>Qalan Sansiniz: {{Saygac}}</h3>
+                    <br>
+                    <br>
+                    <input type="number" v-model="DaxilOlunanEded" class="form-control">
+                    <br>
+                    <br>
+                    <button class="btn btn-info" v-on:click="yoxla()">Yoxla</button> -->
+                    <!-- oyunnnnnnnnnnnnnnnnnnnnnnnnnnnnnn -->
+
+                      <!-- <h1 v-if="deyer">Nesimi Memmedov</h1>
+                    <button class="btn btn-info" @click="deyer=!deyer">Gosder gizle</button> -->
+
+                    <!-- <h1 v-show="deyer">Nesimi Memmedov</h1>
+                    <button class="btn btn-info" @click="deyer=!deyer">Gosder gizle</button> -->
+
+                    <!-- <h1 :style="{color: activeColor, fontSize: activeFontSize + 'px'}">Salam Dunya</h1> -->
+
+                </div>
+            </div>
+            <!-- {{OyunBitdi()}} -->
+        </div>
+
+        <!-- <div class="text-center" v-for="meyve, index in meyveler">{{index}}{{meyve}}</div> -->
+
+        <!-- <div v-for="insan in insanlar">{{insan.email}}</div> -->
+
+        <!-- <div v-for="ad in 100">Nesimi Memmedov</div> -->
+
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+        <script>
+            new Vue({
+                el: "#app",
+                data: {
+                    // meyveler: ["alma", "nar", "armud"]
+                    // insanlar:[
+                    //     {
+                    //         ad:"nesimi",
+                    //         email:"nesimi@mail.ru"
+                    //     },
+                    //     {
+                    //         ad:"yusif",
+                    //         email:"yusif@mail.ru"
+                    //     },{
+                    //         ad:"nesib",
+                    //         email:"nesib@mail.ru"
+                    //     }
+                    // ]
+                    // MyClassName: "purple",
+                    // eded1: 2,
+                    // eded2: 0,
+                    // reng: false,
+                    // arxaFon:"purple",
+                    // yaziRengi: "white",
+                    // hundurluk: 500,
+                    // icherdenMesafe: 200
+                    // axtar: ""
+                    // adSoyad: ""
+                    // text: "",
+                    // eded: 0,
+                    // ad: "Nesimi",
+                    // soyad: "Memmedov",
+                    // yasadigiYer: "Baki",
+                    // yas: 18,
+                    // facebook:"https://www.facebook.com/"
+                    // event: ""
+                    // Gorunurluk:"none",
+                    // Saygac: 5,
+                    // RastGelenEded: Math.floor(Math.random() * 21),
+                    // DaxilOlunanEded: "",
+                    // Mesaj: "",
+                    // deyer:true
+                },
+
+                methods: {
+                    // yoxla: function () {
+                    //     this.Saygac -= 1
+
+                    //     window.location.reload()
+                    //     let GameAlert = document.getElementById("warning")
+
+                    //     GameAlert.style.display = "block";
+
+                    //     if (this.DaxilOlunanEded > this.RastGelenEded) {
+                    //         this.Mesaj = "Cox oldu azaldin"
+                    //     }
+
+                    //     if (this.RastGelenEded > this.DaxilOlunanEded) {
+                    //         this.Mesaj = "Az oldu coxaldin"
+                    //     }
+
+                    //     if (this.DaxilOlunanEded == this.RastGelenEded) {
+                    //         alert("qalibsiniz")
+                    //     }
+                    // }
+
+
+                    // OyunBitdi: function () {
+                    //     if (this.Saygac == 0) {
+                    //         alert("Siz Meglunsunuz")
+                    //         this.Saygac = 5
+                    //     }
+                    // }
+
+
+
+                    // yoxla: function () {
+                    //     console.log("isledi");
+                    //     return this.eded1 % 2 == 0 ? "eded 2 ye bolunur" : "eded 2 ye bolunmur"
+
+                    // }
+                    // KeyUp: function (hadise) {
+                    //     this.text=hadise.target.value;
+                    // }
+
+                    // MouseEnter:function () {
+                    //     this.event="Daxil olundu"
+                    // },
+
+                    // MouseLeave:function () {
+                    //     this.event="Daxil olunmadi"
+                    // }
+
+                    // adSoyad:function (){
+                    //
+                    //     return this.ad+"  "+this.soyad;
+                    // }
+
+                    // adSoyadGoster:function () {
+                    //     return this.adSoyad = "Nesimi memmedov"
+                    // }
+
+                    // Artir:function () {
+                    //     this.eded=this.eded+1;
+                    // },
+
+                    // Azalt:function () {
+                    //     this.eded=this.eded-1;
+                    // }
+
+                },
+                computed: {
+                    // yoxla: function () {
+                    //     console.log("isledi");
+                    //     return this.eded1 % 2 == 0 ? "eded 2 ye bolunur" : "eded 2 ye bolunmur"
+
+                    // }
+
+
+                },
+                watch: {
+                    // axtar:function(value){
+                    //     console.log(value);
+                    // }
+                }
+            })
+        </script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div id="app">
+        <h1>{{ title }}</h1>
+        <button v-on:click="alertwindow">{{ buttonTitle }}</button>
+        <p>{{ paragraph }}</p>
+        <p v-text="paragraph"></p>
+        <a v-bind:href="link">Pribaltika</a>
+        <p v-html="details"></p>
+        <input type="text" v-on:keypress="keyp($event)">
+        <button v-on:click="arttir">Arttir</button>
+        <p>{{sayi}}</p>
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                title: "Vue Js | JavaScript",
+                buttonTitle: "Sol click ilə məni işə saal",
+                paragraph: "Vue js",
+                link: "https://pribaltika.whm.az/",
+                details: "<b>Vue JS ilk addim</b>",
+                sayi: 0,
+            },
+            methods: {
+                arttir() {
+                    this.sayi++
+                },
+                alertwindow() {
+                    alert("Xəbərdarlıq edildi")
+                },
+                keyp(e){
+                    if(e.keyCode == 13){
+                        this.sayi += parseInt(e.target.value)
+                    }
+                    
+                }
+            }
+        });
+    </script> -->
